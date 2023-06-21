@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    background: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#verticalButtons{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background: darkgray;
+}
+#networkCanvas{
+    background: #000000;
+}
+#carCanvas{
+    background: #71736F;
+}
+
+/* darkmode start */
+body.light{
+    background:#B2D2A4;
+}
+
+.toggleClass
+{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    background: #d1dae3;
+    color: #d1dae3;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.toggleClass:before{
+    position: absolute;
+    content: 'Light Mode';
+    left: 25px;
+    white-space: nowrap;
+}
+body.light .toggleClass{
+    background: #091921;
+    color: #091921;
+}
+body.light .toggleClass:before{
+    content: 'Dark Mode';
+}
+
+/* darkmode ends */
